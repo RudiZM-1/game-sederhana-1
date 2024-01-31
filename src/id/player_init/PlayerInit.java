@@ -8,7 +8,7 @@ public class PlayerInit {
         
         Player player = new Player("Rudi ZM");
 
-        player.setJobClassPlayer(new Assasins());
+        player.setJobClassPlayer(new Mage());
         player.jobClassPlayerName();
         player.healthPlayer();
         player.physicalAttackPowerPlayer();

@@ -13,20 +13,23 @@ public abstract class ABSPlayer implements IJobsClass  {
     private int physicalDefensePowerPlayer = 0;
     private int magicalDefensePowerPlayer = 0;
 
+    // constructor
     public ABSPlayer(String username) {
         this.username = username;
     }
 
-    // getter username Player
+    //
+    // getter username player
     public String getUsername() {
         return this.username;
     }
-    // setter username Player
+    // setter username player
     public void setUsername(String username) {
         this.username = username;
     }
 
-    // setter class Player
+    //
+    // setter class player
     public void setJobClassPlayer(IJobsClass jobClassPlayer) {
         this.jobClassPlayer = jobClassPlayer;
     }
@@ -34,7 +37,8 @@ public abstract class ABSPlayer implements IJobsClass  {
     public IJobsClass getJobClassPlayer() {
         return this.jobClassPlayer;
     }
-
+    
+    //
     // getter job class player name
     public String getJobClassPlayerName() {
         return this.jobClassPlayerName;
@@ -44,53 +48,58 @@ public abstract class ABSPlayer implements IJobsClass  {
         this.jobClassPlayerName = jobClassPlayerName;
     }
 
-
-    // getter health Player
+    //
+    // getter health player
     public int getHealthPlayer() {
         return this.healthPlayer;
     }
-    // setter health Player
+    // setter health player
     public void setHealthPlayer(int healthPlayer) {
         this.healthPlayer = healthPlayer;
     }
 
-    // getter physical atttack power Player
+    //
+    // getter physical atttack power player
     public int getPhyscalAttackPowerPlayer() {
         return this.physicalAttackPowerPlayer;
     }
-    // setter physical attack power Player
+    // setter physical attack power player
     public void setPhysicalAttackPowerPlayer(int physicalAttackPowerPlayer) {
         this.physicalAttackPowerPlayer = physicalAttackPowerPlayer;
     }
 
-    // getter magical attack power Player
+    //
+    // getter magical attack power player
     public int getMagicalAttackPowerPlayer() {
         return this.magicalAttackPowerPlayer;
     }
-    // setter magical attack power Player
+    // setter magical attack power player
     public void setMagicalAttackPowerPlayer(int magicalAttackPowerPlayer) {
         this.magicalAttackPowerPlayer =  magicalAttackPowerPlayer;
     }
 
-    // getter physical defense power Player
+    //
+    // getter physical defense power player
     public int getPhysicalDefensePowerPlayer() {
         return this.physicalDefensePowerPlayer;
     }
-    // setter physical defense power Player
+    // setter physical defense power player
     public void setPhysicalDefensePowerPlayer(int physicalDefensePowerPlayer) {
         this.physicalDefensePowerPlayer = physicalDefensePowerPlayer;
     }
 
-    // getter magical defense power Player
+    //
+    // getter magical defense power player
     public int getMagicalDefensePowerPlayer() {
         return this.magicalDefensePowerPlayer;
     }
-    // setter magical defense power Player
+    // setter magical defense power player
     public void setMagicalDefensePowerPlayer(int magicalDefensePowerPlayer) {
         this.magicalDefensePowerPlayer = magicalDefensePowerPlayer;
     }
     
-    // display info Player
+    //
+    // display info player
     public void infoPlayer() {
         System.out.println("Name\t\t\t: " + this.username);
         System.out.println("Class\t\t\t: " + this.jobClassPlayerName);
