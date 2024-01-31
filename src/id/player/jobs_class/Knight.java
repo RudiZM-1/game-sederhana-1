@@ -1,12 +1,13 @@
 package id.player.jobs_class;
 
-public class Assasins implements IJobsClass{
-    private String jobsClassName = "Assasins";
-    private int jobsClassHealth = 2500;
-    private int jobsClassPhysicalAttackPower = 250;
+public class Knight implements IJobsClass {
+    
+    private String jobsClassName = "Knight";
+    private int jobsClassHealth = 3000;
+    private int jobsClassPhysicalAttackPower = 200;
     private int jobsClassMagicalAttackPower = 0;
-    private int jobsClassPhysicalDefensePower = 10;
-    private int jobsClassMagicalDefensePower = 25;
+    private int jobsClassPhysicalDefensePower = 50;
+    private int jobsClassMagicalDefensePower = 50;
 
     public String getJobsClassName() {
         return this.jobsClassName;

@@ -4,46 +4,35 @@ public class Player extends ABSPlayer {
     public Player(String username) {
         super(username);
     }
-
-    //
-    //
-    public String getJobsClassName(){
-        return this.getJobClassPlayer().getJobsClassName();
-    }
-    public int getJobsClassHealth() {
-        return this.getJobClassPlayer().getJobsClassHealth();
-    }
-    public int getJobsClassPhysicalAttackPower() {
-        return this.getJobClassPlayer().getJobsClassPhysicalAttackPower();
-    }
-    public int getJobsClassMagicalAttackPower() {
-        return this.getJobClassPlayer().getJobsClassMagicalAttackPower();
-    }
-    public int getJobsClassPhysicalDefensePower() {
-        return this.getJobClassPlayer().getJobsClassPhysicalDefensePower();
-    }
-    public int getJobsClassMagicalDefensePower() {
-        return this.getJobClassPlayer().getJobsClassMagicalDefensePower();
-    }
-
-    //
-    //
-    public void jobClassPlayerName() {
-        this.setJobClassPlayerName(getJobsClassName());
-    }
     public void healthPlayer() {
-        this.setHealthPlayer(getJobsClassHealth());
+        this.setHealthPlayer(this.getHealthPlayer());
     }
+
+    public int calcPlayerPhysicalAttackPower() {
+        if(this.getWeapons() != null) {
+            return this.getPhyscalAttackPowerPlayer() + this.getJobClassPlayer().getJobsClassPhysicalAttackPower() + this.getWeaponsPhysicalAttackPower();
+        } else {
+            return this.getPhyscalAttackPowerPlayer() + this.getJobClassPlayer().getJobsClassPhysicalAttackPower();
+        }
+    }
+    public int calcPlayerPhysicalDefensePower() {
+        if(this.getArmors() != null) {
+            return this.getPhysicalDefensePowerPlayer() + this.getJobClassPlayer().getJobsClassPhysicalDefensePower() + this.getArmorsPhysicalDefensePower();
+        } else {
+            return this.getPhysicalDefensePowerPlayer() + this.getJobClassPlayer().getJobsClassPhysicalDefensePower();
+        }
+    }
+
     public void physicalAttackPowerPlayer() {
-        this.setPhysicalAttackPowerPlayer(getJobsClassPhysicalAttackPower());
+        this.setPhysicalAttackPowerPlayer(this.calcPlayerPhysicalAttackPower());
     }
     public void magicalAttackPowerPlayer() {
-        this.setMagicalAttackPowerPlayer(getJobsClassMagicalAttackPower());
+        this.setMagicalAttackPowerPlayer(0);
     }
     public void physicalDefensePowerPlayer() {
-        this.setPhysicalDefensePowerPlayer(getJobsClassPhysicalDefensePower());
+        this.setPhysicalDefensePowerPlayer(calcPlayerPhysicalDefensePower());
     }
     public void magicalDefensePowerPlayer() {
-        this.setMagicalDefensePowerPlayer(getJobsClassMagicalDefensePower());
+        this.setMagicalDefensePowerPlayer(0);
     }
 }
