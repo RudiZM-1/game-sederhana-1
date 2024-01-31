@@ -24,7 +24,7 @@ public class Player extends ABSPlayer {
     }
 
     public void physicalAttackPowerPlayer() {
-        this.setPhysicalAttackPowerPlayer(this.calcPlayerPhysicalAttackPower());
+        this.setPhysicalAttackPowerPlayer(calcPlayerPhysicalAttackPower());
     }
     public void magicalAttackPowerPlayer() {
         this.setMagicalAttackPowerPlayer(0);
