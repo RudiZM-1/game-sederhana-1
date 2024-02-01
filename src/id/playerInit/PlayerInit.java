@@ -1,9 +1,9 @@
-package id.player_init;
+package id.playerInit;
 
 import id.player.Player;
-import id.player.equipments.equipments_category.armors.Selvlet;
-import id.player.equipments.equipments_category.weapons.Katana;
-import id.player.jobs_class.*;
+import id.player.equipments.equipmentsCategory.armors.Selvlet;
+import id.player.equipments.equipmentsCategory.weapons.Katana;
+import id.player.jobsClass.*;
 
 public class PlayerInit {
     public static void playerInit() {

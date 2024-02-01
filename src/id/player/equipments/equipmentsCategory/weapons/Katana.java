@@ -1,4 +1,4 @@
-package id.player.equipments.equipments_category.weapons;
+package id.player.equipments.equipmentsCategory.weapons;
 
 public class Katana implements IWeapons {
     private String equipmentsCategory = "Weapon";

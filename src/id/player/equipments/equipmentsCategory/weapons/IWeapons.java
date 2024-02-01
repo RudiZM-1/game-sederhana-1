@@ -1,4 +1,4 @@
-package id.player.equipments.equipments_category.weapons;
+package id.player.equipments.equipmentsCategory.weapons;
 
 public interface IWeapons {
     String getEquipmentsCategory();

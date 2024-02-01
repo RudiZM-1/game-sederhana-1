@@ -1,12 +1,12 @@
-package id.player.jobs_class;
+package id.player.jobsClass;
 
-public class Mage implements IJobsClass {
-    private String jobsClassName = "Mage";
-    private int jobsClassHealth = 2500;
-    private int jobsClassPhysicalAttackPower = 0;
-    private int jobsClassMagicalAttackPower = 220;
-    private int jobsClassPhysicalDefensePower = 25;
-    private int jobsClassMagicalDefensePower = 50;
+public class Novice implements IJobsClass {
+    private String jobsClassName = "Novice";
+    private int jobsClassHealth = 1000;
+    private int jobsClassPhysicalAttackPower = 50;
+    private int jobsClassMagicalAttackPower = 50;
+    private int jobsClassPhysicalDefensePower = 0;
+    private int jobsClassMagicalDefensePower = 0;
 
     public String getJobsClassName() {
         return this.jobsClassName;
@@ -25,5 +25,5 @@ public class Mage implements IJobsClass {
     }
     public int getJobsClassMagicalDefensePower() {
         return this.jobsClassMagicalDefensePower;
-    }  
+    }
 }

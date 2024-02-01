@@ -1,4 +1,4 @@
-package id.player.jobs_class;
+package id.player.jobsClass;
 
 public class Knight implements IJobsClass {
     

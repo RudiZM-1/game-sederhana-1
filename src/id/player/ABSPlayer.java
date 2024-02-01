@@ -1,8 +1,8 @@
 package id.player;
 
-import id.player.equipments.equipments_category.armors.IArmors;
-import id.player.equipments.equipments_category.weapons.IWeapons;
-import id.player.jobs_class.*;
+import id.player.equipments.equipmentsCategory.armors.IArmors;
+import id.player.equipments.equipmentsCategory.weapons.IWeapons;
+import id.player.jobsClass.*;
 
 public abstract class ABSPlayer {
 

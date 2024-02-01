@@ -1,4 +1,4 @@
-package id.player.equipments.equipments_category.armors;
+package id.player.equipments.equipmentsCategory.armors;
 
 public class Selvlet implements IArmors {
     private String equipmentsCategory = "Armors";
