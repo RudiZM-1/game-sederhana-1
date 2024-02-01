@@ -104,16 +104,12 @@ public abstract class ABSPlayer {
 
 
 
-    //
-    // setter weapons
     public void equipWeapon(IWeapons weapons) {
         this.weapons = weapons;
     }
-    // getter weapons
     public IWeapons getWeapons() {
         return this.weapons;
     }
-    // getter weapons name
     public String getWeaponsName() {
         if(this.weapons != null) {
             return this.weapons.getWeaponsName();
@@ -121,7 +117,6 @@ public abstract class ABSPlayer {
             return "Dont Have Weapons";
         }
     }
-    // getter weapons physical attack power
     public int getWeaponsPhysicalAttackPower() {
         if(this.weapons != null) {
             return this.weapons.getWeaponsPhysicalAttackPower();
@@ -138,7 +133,6 @@ public abstract class ABSPlayer {
     public IArmors getArmors() {
         return this.armors;
     }
-
      public String getArmorsName() {
         if(this.weapons != null) {
             return this.armors.getArmorsName();
@@ -146,7 +140,6 @@ public abstract class ABSPlayer {
             return "Dont Have Armors";
         }
     }
-
     public int getArmorsPhysicalDefensePower() {
         if(this.weapons != null) {
             return this.armors.getArmorsPhysicalDefensePower();
