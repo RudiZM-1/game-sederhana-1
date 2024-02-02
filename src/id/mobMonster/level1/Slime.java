@@ -7,5 +7,6 @@ public class Slime extends ABSMobMonster {
     public void setMobDropItems() {
         this.getMobDropItems().add("Lendir");
         this.getMobDropItems().add("Kristal");
+        this.getMobDropItems().add("Slime Skill");
     }
 }
