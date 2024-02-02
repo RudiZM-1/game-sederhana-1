@@ -8,6 +8,7 @@ public class Main{
         PlayerInit.playerInit();
         Slime slime  = new Slime();
 
+        slime.setMobDropItems();
         System.out.println(slime.getMobDropItemList(0));
         System.out.println(slime.getMobDropItemList(1));
 

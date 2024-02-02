@@ -42,7 +42,7 @@ public abstract class ABSMobMonster {
     }
 
     // setter dan getter mob drop items
-    public abstract void setMobDropItems(String ... mobDropItems);
+    public abstract void setMobDropItems();
 
     public ArrayList getMobDropItems() {
         return this.mobDropItems;
