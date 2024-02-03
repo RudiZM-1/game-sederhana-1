@@ -9,7 +9,7 @@ public class Slime extends ABSMobMonster {
     public void initSlimeDropItems() {
         this.setMobName("Slime");
         this.setMobLevel(1);
-        this.setMobHealth(1000);
+        this.setMobHealth(0);
         this.setMobDropItems(new SlimeGel(), new SlimeCore(), null, null, null);
     }
 }
