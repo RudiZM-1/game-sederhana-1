@@ -1,5 +1,7 @@
 package id.player;
 
+import id.ability.attack.IAttack;
+import id.ability.attack.basic.BasicAttack;
 import id.player.equipments.equipmentsCategory.armors.IArmors;
 import id.player.equipments.equipmentsCategory.weapons.IWeapons;
 import id.player.jobsClass.*;
@@ -15,10 +17,16 @@ public abstract class ABSPlayer {
     private int magicalDefensePowerPlayer = 0;
     private IWeapons weapons = null;
     private IArmors armors = null;
+    private IAttack attack;
 
     // constructor
     public ABSPlayer(String username) {
         this.username = username;
+    }
+
+    public void basicAttack(Player attacker, Player enemy) {
+        this.attack = new BasicAttack();
+        this.attack.basicAttack(attacker, enemy);
     }
 
     //

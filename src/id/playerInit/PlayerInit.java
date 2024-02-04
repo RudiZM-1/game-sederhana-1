@@ -6,18 +6,31 @@ import id.player.equipments.equipmentsCategory.weapons.Katana;
 import id.player.jobsClass.*;
 
 public class PlayerInit {
-    public static void playerInit() {
-        
-        Player player = new Player("Rudi ZM");
 
-        player.setJobClassPlayer(new Assasins());
-        
-        player.equipWeapon(new Katana());
-        player.equipArmor(new Selvlet());
+    public Player player;
 
-        player.physicalAttackPowerPlayer();
-        player.physicalDefensePowerPlayer();
-        player.infoPlayer(); 
+    public PlayerInit(Player player) {
+        this.player = player;
+    }
+    private Player getPlayer() {
+        return this.player;
+    }
+    public void playerInit() {
+
+        this.player.setJobClassPlayer(new Assasins());
+        
+        this.player.equipWeapon(new Katana());
+        this.player.equipArmor(new Selvlet());
+
+        this.player.healthPlayer();
+        this.player.physicalAttackPowerPlayer();
+        this.player.physicalDefensePowerPlayer();
+        this.player.infoPlayer(); 
+
+    }
+
+    public void basicAttack(PlayerInit enemy) {
+        this.player.basicAttack(this.getPlayer(), enemy.getPlayer());
     }
     
 }

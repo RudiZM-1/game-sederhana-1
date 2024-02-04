@@ -4,9 +4,6 @@ public class Player extends ABSPlayer {
     public Player(String username) {
         super(username);
     }
-    public void healthPlayer() {
-        this.setHealthPlayer(this.getHealthPlayer());
-    }
 
     public int calcPlayerPhysicalAttackPower() {
         if(this.getWeapons() != null) {
@@ -23,6 +20,9 @@ public class Player extends ABSPlayer {
         }
     }
 
+    public void healthPlayer() {
+        this.setHealthPlayer(1000);
+    }
     public void physicalAttackPowerPlayer() {
         this.setPhysicalAttackPowerPlayer(calcPlayerPhysicalAttackPower());
     }
